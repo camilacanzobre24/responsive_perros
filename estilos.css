@@ -1,0 +1,25 @@
+.navbar-nav .nav-item {
+    margin-right: 100px; /* Ajusta el valor para más o menos separación */
+}
+
+@media (min-width: 992px) {
+    #search-form {
+      order: 2; /* Mueve el formulario al final en pantallas grandes */
+      width: auto; /* Ajusta el ancho */
+      margin-left: auto; /* Lo empuja a la derecha */
+    }
+  }
+
+  /* Fondo personalizado para la barra de navegación */
+.bg-custom {
+    background-color: #6c757d ;
+}
+.text-light-gray {
+    color: #d6d6d6 ;
+}
+.text-gray{
+   color: #5f656a ;
+}
+#dropdownOptions{
+    color: #d6d6d6 ;
+}

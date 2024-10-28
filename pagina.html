@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página sobre perros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="estilos.css" rel="stylesheet">
+    <style>
+        /* Oculta el menú de opciones en pantallas pequeñas */
+        @media (max-width: 991px) {
+            .options-menu {
+                display: none; /* Oculta el menú en pantallas pequeñas */
+            }
+        }
+        .text-gray {
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <!-- barra de navegacion-->
+    <nav class="navbar navbar-expand-lg bg-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">Todo sobre perros</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex" role="search" id="search-form">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" aria-current="page" href="#">Razas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light-gray" href="#">Cuidados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light-gray" href="#">Curiosidades</a>
+                    </li>
+                </ul>
+                <!-- Botón para desplegar el menú de opciones -->
+                <div class="dropdown d-lg-none">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownOptions" data-bs-toggle="dropdown" aria-expanded="false">
+                        Opciones
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownOptions">
+                        <li><a class="dropdown-item" href="#">Adiestramiento</a></li>
+                        <li><a class="dropdown-item" href="#">Alimentación</a></li>
+                        <li><a class="dropdown-item" href="#">Belleza</a></li>
+                        <li><a class="dropdown-item" href="#">Salud</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="text-center">
+            <h3>El perro...</h3>
+            <div class="container">
+                <div id="textCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div>el mejor amigo del hombre</div>
+                        </div>
+                        <div class="carousel-item">
+                            <div>todo lo que necesitas saber</div>
+                        </div>
+                        <div class="carousel-item">
+                            <div>el único ser de la tierra que te ama más que a sí mismo</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenedor para el menú de opciones y el texto informativo -->
+        <div class="container mt-5">
+            <div class="row">
+                <!-- menú de opciones (en pantallas grandes) -->
+                <div class="col-12 col-md-4 d-none d-lg-flex justify-content-center">
+                    <ul class="list-group text-center">
+                        <li class="list-group-item"><u>Adiestramiento</u></li>
+                        <li class="list-group-item"><u>Alimentación</u></li>
+                        <li class="list-group-item"><u>Belleza</u></li>
+                        <li class="list-group-item"><u>Salud</u></li>
+                    </ul>
+                </div>
+
+                <!-- texto informativo -->
+                <div class="col-12 col-md-8 text-gray">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
+                            <p>El perro pertenece a la especie de los cánidos. Su tamaño, forma y pelaje varían en función de la raza de perro.</p>
+                            <p>Se caracteriza por tener el olfato y el oído muy desarrollados. Emiten sonidos denominados ladridos.</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
+                            <p>Es un animal inteligente y leal a su amo, de ahí su fama de ser el mejor amigo del hombre.</p>
+                            <p>Los perros llevan con los humanos miles de años, acompañándonos y siendo no solo nuestras mascotas, sino también nuestros defensores y compañeros de caza.</p>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3 d-none d-lg-block">
+                            <p>Viven actualmente especies que se consideran de la misma familia, como son los lobos y los zorros. Sin embargo, gracias a la interacción constante con las personas, fueron cada vez más acercándose a estos, terminando por criarlos y domesticarlos para las funciones anteriormente descritas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
